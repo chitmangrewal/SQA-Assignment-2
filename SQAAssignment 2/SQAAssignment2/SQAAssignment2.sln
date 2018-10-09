@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQAAssignment2", "SQAAssignment2\SQAAssignment2.csproj", "{CA487BBB-7D34-482B-BF1C-0E18348B0BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQAAssignment2_Tests", "SQAAssignment2_Tests\SQAAssignment2_Tests.csproj", "{647CEB45-B070-4205-AD70-E5B4620D95ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA487BBB-7D34-482B-BF1C-0E18348B0BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA487BBB-7D34-482B-BF1C-0E18348B0BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA487BBB-7D34-482B-BF1C-0E18348B0BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA487BBB-7D34-482B-BF1C-0E18348B0BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647CEB45-B070-4205-AD70-E5B4620D95ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647CEB45-B070-4205-AD70-E5B4620D95ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647CEB45-B070-4205-AD70-E5B4620D95ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647CEB45-B070-4205-AD70-E5B4620D95ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD5E2B21-26A2-4075-8FA0-5624E5BFD94D}
+	EndGlobalSection
+EndGlobal
