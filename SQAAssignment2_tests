@@ -1,0 +1,170 @@
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using SQAAssignment2;
+using NUnit.Framework;
+
+namespace SQAAssignment2_Tests
+{
+
+    [TestFixture]
+
+    public class SQAAssignment2_Tests
+
+    {
+        [Test]
+
+        //Testcase 1
+
+        public void Analyze_Triangle_Input_0_0_0_Expectedoutput_NotTriangle()
+        {
+            // Arrange
+            int a = 0;
+            int b = 0;
+            int c = 0;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("This is not a Triangle", result);
+        }
+
+
+
+        [Test]
+
+        //TestCase 2
+        public void Analyze_Triangle_Input_5_5_5_Expectedoutput_Equilateral()
+        {
+            // Arrange
+            int a = 5;
+            int b = 5;
+            int c = 5;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("It's an Equilateral Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase3
+        ///neither equailateral nor scalene.
+        public void Analyze_Triangle_Input_3_6_6_Expectedoutput_Isosceles()
+        {
+            // Arrange
+            int a = 3;
+            int b = 6;
+            int c = 6;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("It's an Isosceles Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase4
+        public void Analyze_Triangle_Input_2_1_3_Expectedoutput_Scalene()
+        {
+            // Arrange
+            int a = 2;
+            int b = 1;
+            int c = 3;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("It's a Scalene Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase5
+
+        public void Analyze_Triangle_Input_8_6_2_Expectedoutput_Scalene()
+        {
+            // Arrange
+            int a = 8;
+            int b = 6;
+            int c = 2;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("It's a Scalene Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase6
+
+        public void Analyze_Triangle_Input_200_3_8_Expectedoutput_NotTriangle()
+        {
+            // Arrange
+            int a = 200;
+            int b = 3;
+            int c = 8;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("It's not a Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase7
+
+        public void Analyze_Triangle_Input_2_0_0_Expectedoutput_NotTriangle()
+        {
+            // Arrange
+            int a = 2;
+            int b = 0;
+            int c = 0;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("Its not a Triangle", result);
+        }
+
+        [Test]
+
+        //TestCase8
+
+        public void Analyze_Triangle_Input_9_9_9_Expectedoutput_Equilateral()
+        {
+            // Arrange
+            int a = 5;
+            int b = 5;
+            int c = 5;
+
+            // Act
+            string result = TriangleSolver.Analyze(a, b, c);
+
+            //Assert
+            Assert.AreEqual("it's an Equilateral Triangle", result);
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
